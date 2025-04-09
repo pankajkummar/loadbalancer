@@ -14,4 +14,8 @@ public class ServerModel {
     public void setUrl(String url) {
         this.url = url;
     }
+
+    public ServerModel(String url) {
+        this.url = url;
+    }
 }
