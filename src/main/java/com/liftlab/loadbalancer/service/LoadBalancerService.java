@@ -48,9 +48,12 @@ public class LoadBalancerService {
     }
     public void addServer(ServerModel server) {
         servers.add(server);
+        log.info("Server added: {}", server.getUrl());
     }
     public void removeServer(String url) {
         servers.removeIf(s -> s.getUrl().equals(url));
+        log.info("Server removed: {}", url);
+
     }
     public List<ServerModel> getServers() {
         return servers;
