@@ -37,10 +37,16 @@ request body:
 
 ### 3. Remove server ( /admin/remove )
 use postman and send delete request with server url to http://localhost:8080/admin/remove  
-request body:
+<\br>
+<pre>
+
+<code>json
 {
-"url":"http://localhost:8081"
+  "url": "http://localhost:8081"
 }
+</code>
+
+</pre>
 ### 4. change Strategy  ( /admin/strategy)
 use postman and send post request with server url to http://localhost:8080/admin/strategy
 request body:
