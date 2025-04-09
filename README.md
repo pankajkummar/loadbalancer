@@ -26,6 +26,28 @@ Step 4: start dummy servers using sh bash_scripts/dummy-servers/run_dummyServers
 
 ### 1. List server ( /admin/servers )
 Use postman or web browser and send get request to http://localhost:8080/admin/servers
+<pre lang="json">
+```json
+[
+  {
+    "url": "http://localhost:8081",
+    "healthy": true
+  },
+  {
+    "url": "http://localhost:8082",
+    "healthy": true
+  },
+  {
+    "url": "http://localhost:8083",
+    "healthy": true
+  },
+  {
+    "url": "http://localhost:8084",
+    "healthy": false
+  }
+]
+```
+</pre>
 
 
 ### 2. Add server ( /admin/add )
