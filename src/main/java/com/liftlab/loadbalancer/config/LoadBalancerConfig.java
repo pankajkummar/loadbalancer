@@ -11,6 +11,7 @@ import java.util.List;
 @ConfigurationProperties(prefix = "loadbalancer")
 public class LoadBalancerConfig {
     private List<ServerModel> servers;
+    private List<String> excludePaths;
     private String strategy = "round-robin";
 
     public List<ServerModel> getServers(){
@@ -26,4 +27,11 @@ public class LoadBalancerConfig {
         this.strategy = strategy;
     }
 
+    public List<String> getExcludePaths() {
+        return excludePaths;
+    }
+
+    public void setExcludePaths(List<String> excludePaths) {
+        this.excludePaths = excludePaths;
+    }
 }
