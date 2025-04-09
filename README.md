@@ -1,2 +1,3 @@
 **Liftlab Assignment Loadbalancer**
-![Load Balancer Architecture](images/loadBalancerLLD.png)
+![Load Balancer HLD](images/loadbalancerHLD.png)
+![Load Balancer LLD](images/loadBalancerLLD.png)
