@@ -89,3 +89,9 @@ use postman and send post request with server url to http://localhost:8080/admin
 
 </pre>
 
+### 5. check route forwarding by loadbalancer
+use any browser or postman and send a get request to http://localhost:8080
+<br>
+Response : You reached Server-1 on port 8081
+<br>
+If you hit same url multiple time you will notice server name and port is changing
