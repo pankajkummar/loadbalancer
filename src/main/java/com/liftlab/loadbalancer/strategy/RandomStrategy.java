@@ -12,7 +12,10 @@ public class RandomStrategy implements LoadBalancerStrategy {
     @Override
     public ServerModel selectServer(List<ServerModel> servers) {
         if(servers.isEmpty()) return null;
-        return servers.get(random.nextInt(servers.size()));
+        List<ServerModel> healthyServers = servers.stream()
+                .filter(ServerModel::isHealthy)
+                .toList();
+        return healthyServers.get(random.nextInt(healthyServers.size()));
     }
 
     @Override

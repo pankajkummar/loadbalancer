@@ -2,8 +2,9 @@ package com.liftlab.loadbalancer.service;
 
 import com.liftlab.loadbalancer.model.ServerModel;
 import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
-
+@Component
 public class HealthCheckSchedulerService {
     private final LoadBalancerService service;
     private final RestTemplate restTemplate = new RestTemplate();

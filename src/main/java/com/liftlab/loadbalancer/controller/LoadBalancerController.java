@@ -23,10 +23,14 @@ public class LoadBalancerController {
 
 
 
-    @RequestMapping("/loadbalancer/**")
+    @RequestMapping("**")
     public ResponseEntity<?> handleRequest(HttpMethod method, HttpServletRequest request, @RequestBody(required = false) String body) throws IOException
     {
         String path = request.getRequestURI();
+        // Skip forwarding for admin or internal paths
+        if (path.startsWith("/admin")) {
+            return ResponseEntity.status(403).body("Access denied: internal path");
+        }
         HttpHeaders headers = new HttpHeaders();
         Enumeration<String> headerNames = request.getHeaderNames();
         while (headerNames.hasMoreElements()) {
