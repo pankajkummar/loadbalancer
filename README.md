@@ -61,7 +61,7 @@ use postman and send post request with server url to http://localhost:8080/admin
 request body: 
 <pre>
 
-<code>json
+<code>
 {
   "url": "http://localhost:8084"
 }
@@ -74,7 +74,7 @@ use postman and send delete request with server url to http://localhost:8080/adm
 
 <pre>
 
-<code>json
+<code>
 {
   "url": "http://localhost:8084"
 }
@@ -86,7 +86,7 @@ use postman and send post request with server url to http://localhost:8080/admin
 
 <pre>
 
-<code>json
+<code>
 {
   "name":"random"
 }
