@@ -19,9 +19,10 @@ Step 1: Clone the project repository.
 Step 2: Go to directory bash_scripts
 
 Step 3: start loadbalancer using sh bash_scripts/start_loadbalancer/start-loadbalancer.sh
-        - loadbalacer will start on port 8080
+<br> - loadbalacer will start on port 8080
+
 Step 4: start dummy servers using sh bash_scripts/dummy-servers/run_dummyServers.sh
-        - You will have 3 dummy server running on port 8081, 8082, 8083
+<br> - You will have 3 dummy server running on port 8081, 8082, 8083
 # Steps to Test the functionality of loadbalancer
 
 ### 1. List server ( /admin/servers )
