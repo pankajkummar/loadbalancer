@@ -30,27 +30,40 @@ Use postman or web browser and send get request to http://localhost:8080/admin/s
 
 ### 2. Add server ( /admin/add )
 use postman and send post request with server url to http://localhost:8080/admin/add
+<br>
 request body: 
-{
-"url":"http://localhost:8084"
-}
-
-### 3. Remove server ( /admin/remove )
-use postman and send delete request with server url to http://localhost:8080/admin/remove  
-<\br>
 <pre>
 
 <code>json
 {
-  "url": "http://localhost:8081"
+  "url": "http://localhost:8084"
+}
+</code>
+
+</pre>
+
+### 3. Remove server ( /admin/remove )
+use postman and send delete request with server url to http://localhost:8080/admin/remove  
+
+<pre>
+
+<code>json
+{
+  "url": "http://localhost:8084"
 }
 </code>
 
 </pre>
 ### 4. change Strategy  ( /admin/strategy)
 use postman and send post request with server url to http://localhost:8080/admin/strategy
-request body:
+
+<pre>
+
+<code>json
 {
-"name":"random"
+  "name":"random"
 }
+</code>
+
+</pre>
 
