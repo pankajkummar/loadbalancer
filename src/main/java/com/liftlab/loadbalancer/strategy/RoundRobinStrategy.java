@@ -19,7 +19,7 @@ public class RoundRobinStrategy implements  LoadBalancerStrategy {
         if (healthyServers.isEmpty()) {
             throw new RuntimeException("No healthy servers available.");
         }
-        int i = Math.abs(index.getAndIncrement() % servers.size());
+        int i = Math.abs(index.getAndIncrement() % healthyServers.size());
         return healthyServers.get(i);
     }
 
