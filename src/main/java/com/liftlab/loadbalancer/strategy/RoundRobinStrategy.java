@@ -12,8 +12,15 @@ public class RoundRobinStrategy implements  LoadBalancerStrategy {
     @Override
     public ServerModel selectServer(List<ServerModel> servers) {
         if(servers.isEmpty()) return null;
+        List<ServerModel> healthyServers = servers.stream()
+                .filter(ServerModel::isHealthy)
+                .toList();
+
+        if (healthyServers.isEmpty()) {
+            throw new RuntimeException("No healthy servers available.");
+        }
         int i = Math.abs(index.getAndIncrement() % servers.size());
-        return servers.get(i);
+        return healthyServers.get(i);
     }
 
     @Override
