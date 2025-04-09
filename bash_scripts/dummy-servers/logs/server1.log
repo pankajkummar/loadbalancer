@@ -8,18 +8,18 @@
 
  :: Spring Boot ::                (v3.4.4)
 
-2025-04-09T10:34:45.134+05:30  INFO 50948 --- [           main] c.l.dummyServer.DummyServerApplication   : Starting DummyServerApplication v0.0.1-SNAPSHOT using Java 23.0.1 with PID 50948 (/Users/pankaj/projects/loadbalancer/dummy-servers/dummyServer-0.0.1-SNAPSHOT.jar started by pankaj in /Users/pankaj/projects/loadbalancer/dummy-servers)
-2025-04-09T10:34:45.141+05:30  INFO 50948 --- [           main] c.l.dummyServer.DummyServerApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-04-09T10:34:46.670+05:30  INFO 50948 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-04-09T10:34:46.676+05:30  INFO 50948 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-04-09T10:34:46.676+05:30  INFO 50948 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
-2025-04-09T10:34:46.778+05:30  INFO 50948 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-04-09T10:34:46.779+05:30  INFO 50948 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1484 ms
-2025-04-09T10:34:47.306+05:30  WARN 50948 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2025-04-09T10:34:47.316+05:30  INFO 50948 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+2025-04-09T18:07:26.361+05:30  INFO 53677 --- [           main] c.l.dummyServer.DummyServerApplication   : Starting DummyServerApplication v0.0.1-SNAPSHOT using Java 23.0.1 with PID 53677 (/Users/pankaj/projects/loadbalancer/bash_scripts/dummy-servers/dummyServer-0.0.1-SNAPSHOT.jar started by pankaj in /Users/pankaj/projects/loadbalancer/bash_scripts/dummy-servers)
+2025-04-09T18:07:26.364+05:30  INFO 53677 --- [           main] c.l.dummyServer.DummyServerApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-04-09T18:07:27.162+05:30  INFO 53677 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-04-09T18:07:27.169+05:30  INFO 53677 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-09T18:07:27.169+05:30  INFO 53677 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-09T18:07:27.202+05:30  INFO 53677 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-09T18:07:27.202+05:30  INFO 53677 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 788 ms
+2025-04-09T18:07:27.561+05:30  WARN 53677 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-04-09T18:07:27.568+05:30  INFO 53677 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-04-09T10:34:47.329+05:30 ERROR 50948 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+2025-04-09T18:07:27.574+05:30 ERROR 53677 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
 
 ***************************
 APPLICATION FAILED TO START

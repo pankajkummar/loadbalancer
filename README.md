@@ -24,13 +24,27 @@ Step 4: start dummy servers using sh bash_scripts/dummy-servers/run_dummyServers
         - You will have 3 dummy server running on port 8081, 8082, 8083
 # Steps to Test the functionality of loadbalancer
 
-### 1. List server
-    Use postman
+### 1. List server ( /admin/servers )
+Use postman or web browser and send get request to http://localhost:8080/admin/servers
 
 
-### 1. Add server
+### 2. Add server ( /admin/add )
+use postman and send post request with server url to http://localhost:8080/admin/add
+request body: 
+{
+"url":"http://localhost:8084"
+}
 
-### 1. Remove server
-
-### 1. change Strategy 
+### 3. Remove server ( /admin/remove )
+use postman and send delete request with server url to http://localhost:8080/admin/remove  
+request body:
+{
+"url":"http://localhost:8081"
+}
+### 4. change Strategy  ( /admin/strategy)
+use postman and send post request with server url to http://localhost:8080/admin/strategy
+request body:
+{
+"name":"random"
+}
 
