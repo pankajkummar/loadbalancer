@@ -25,6 +25,8 @@ Step 3: start loadbalancer using
 
 Step 4: start dummy servers using 
 
+Note: If you want to change the Port or add additional server can be done through properties file in bash_script folder.
+
     sh bash_scripts/dummy-servers/run_dummyServers.sh
 <br> - You will have 3 dummy server running on port 8081, 8082, 8083
 # Steps to Test the functionality of loadbalancer
