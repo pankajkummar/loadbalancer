@@ -94,6 +94,9 @@ use postman and send post request with server url to http://localhost:8080/admin
 
 </pre>
 
+<br>
+Use "random" to choose random strategy and "round-robin" to chose round-robin strategy. these two strategies are implemented.
+
 ### 5. check route forwarding by loadbalancer
 use any browser or postman and send a get request to http://localhost:8080
 <br>
