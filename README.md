@@ -31,6 +31,8 @@ Step 4: start dummy servers using
 
 ### 1. List server ( /admin/servers )
 Use postman or web browser and send get request to http://localhost:8080/admin/servers
+<br>Json response : list of registered servers
+
 <pre lang="json">
 
 [
@@ -58,7 +60,7 @@ Use postman or web browser and send get request to http://localhost:8080/admin/s
 ### 2. Add server ( /admin/add )
 use postman and send post request with server url to http://localhost:8080/admin/add
 <br>
-request body: 
+<br>Json body :
 <pre>
 
 <code>
@@ -71,6 +73,7 @@ request body:
 
 ### 3. Remove server ( /admin/remove )
 use postman and send delete request with server url to http://localhost:8080/admin/remove  
+<br>Json body :
 
 <pre>
 
@@ -83,7 +86,7 @@ use postman and send delete request with server url to http://localhost:8080/adm
 </pre>
 ### 4. change Strategy  ( /admin/strategy)
 use postman and send post request with server url to http://localhost:8080/admin/strategy
-
+<br>Json body :
 <pre>
 
 <code>
@@ -96,6 +99,7 @@ use postman and send post request with server url to http://localhost:8080/admin
 
 <br>
 Use "random" to choose random strategy and "round-robin" to chose round-robin strategy. these two strategies are implemented.
+<br> round-robin is the default strategy.
 
 ### 5. check route forwarding by loadbalancer
 use any browser or postman and send a get request to http://localhost:8080
